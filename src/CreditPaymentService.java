@@ -3,8 +3,8 @@ public class CreditPaymentService {
         //creditSumm - сумма кредита,
         //yearBet - процентная ставка (годовая),
         //creditPeriod - период кредитования (в месяцах).
-        double monthBet;
-        monthBet = yearBet / 100 / 12;     //месячная процентная ставка
+        double monthBet;        //месячная процентная ставка
+        monthBet = yearBet / 100 / 12;     
         double pay;             //ежемесячный платеж
         pay = (creditSumm * monthBet) / (1 - Math.pow(1 + monthBet, - creditPeriod)); // формула расчета
         return pay;

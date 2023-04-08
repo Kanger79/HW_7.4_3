@@ -13,14 +13,14 @@ public class Main {
 
         double pay2 = service.calc(summK, ys, 24);
         int twoY = (int) pay2;
-        System.out.println("При сумме кредита в " + summK + " рублей, сроком на 24 месяцев (2 года), и процентной ставке " + ys + "%, ");
+        System.out.println("При сумме кредита в " + summK + " рублей, сроком на 24 месяца (2 года), и процентной ставке " + ys + "%, ");
         System.out.println("ежемесячный платёж составит " + twoY + " рублей.");
         System.out.println();
 
         double pay3 = service.calc(summK, ys, 36);
         int threeY = (int) pay3;
         System.out.println("При сумме кредита в " + summK + " рублей, сроком на 36 месяцев (3 года), и процентной ставке " + ys + "%, ");
-        System.out.println("ежемесячный платёж составит " + threeY + " рублей.");
+        System.out.println("ежемесячный платёж составит " + threeY + " рубля.");
 
 
     }

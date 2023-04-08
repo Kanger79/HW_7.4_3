@@ -1,26 +1,26 @@
 public class Main {
     public static void main(String[] args) {
         CreditPaymentService service = new CreditPaymentService();
-        double summK = 1_000_000;
-        double ys = 9.99;
-        //  double lk = 12;
+        double creditSumm = 1_000_000;
+        double yearBet = 9.99;
+        //  double creditPeriod = 12;
 
-        double pay1 = service.calc(summK, ys, 12);
-        int oneY = (int) pay1;
-        System.out.println("При сумме кредита в " + summK + " рублей, сроком на 12 месяцев (1 год), и процентной ставке " + ys + "%, ");
-        System.out.println("ежемесячный платёж составит " + oneY + " рублей.");
+        double payOne = service.calc(creditSumm, yearBet, 12);
+        int oneYear = (int) payOne;
+        System.out.println("При сумме кредита в " + creditSumm + " рублей, сроком на 12 месяцев (1 год), и процентной ставке " + yearBet + "%, ");
+        System.out.println("ежемесячный платёж составит " + oneYear + " рублей.");
         System.out.println();
 
-        double pay2 = service.calc(summK, ys, 24);
-        int twoY = (int) pay2;
-        System.out.println("При сумме кредита в " + summK + " рублей, сроком на 24 месяца (2 года), и процентной ставке " + ys + "%, ");
-        System.out.println("ежемесячный платёж составит " + twoY + " рублей.");
+        double payTwo = service.calc(creditSumm, yearBet, 24);
+        int twoYears = (int) payTwo;
+        System.out.println("При сумме кредита в " + creditSumm + " рублей, сроком на 24 месяца (2 года), и процентной ставке " + yearBet + "%, ");
+        System.out.println("ежемесячный платёж составит " + twoYears + " рублей.");
         System.out.println();
 
-        double pay3 = service.calc(summK, ys, 36);
-        int threeY = (int) pay3;
-        System.out.println("При сумме кредита в " + summK + " рублей, сроком на 36 месяцев (3 года), и процентной ставке " + ys + "%, ");
-        System.out.println("ежемесячный платёж составит " + threeY + " рубля.");
+        double payThree = service.calc(creditSumm, yearBet, 36);
+        int threeYears = (int) payThree;
+        System.out.println("При сумме кредита в " + creditSumm + " рублей, сроком на 36 месяцев (3 года), и процентной ставке " + yearBet + "%, ");
+        System.out.println("ежемесячный платёж составит " + threeYears + " рубля.");
 
 
     }

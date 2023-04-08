@@ -1,12 +1,12 @@
 public class CreditPaymentService {
-    public double calc(double summK, double ys, double lk) {
-        //sunnK - сумма кредита,
-        //ys - процентная ставка (годовая),
-        //lk - период кредитования (в месяцах).
-        double ms;
-        ms = ys / 100 / 12;     //месячная процентная ставка
+    public double calc(double creditSumm, double yearBet, double creditPeriod) {
+        //creditSumm - сумма кредита,
+        //yearBet - процентная ставка (годовая),
+        //creditPeriod - период кредитования (в месяцах).
+        double monthBet;
+        monthBet = yearBet / 100 / 12;     //месячная процентная ставка
         double pay;             //ежемесячный платеж
-        pay = (summK * ms) / (1 - Math.pow(1 + ms, -lk)); // формула расчета
+        pay = (creditSumm * monthBet) / (1 - Math.pow(1 + monthBet, - creditPeriod)); // формула расчета
         return pay;
 
     }
